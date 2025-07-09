@@ -48,7 +48,9 @@ const Navbar = () => {
               <span>(555) 123-4567</span>
             </div>
             <button className="bg-primary-clr hover:bg-amber-600 text-text-dark font-semibold rounded-lg px-5 py-2">
-              Free Consultation
+              <a href="#contact" className="cursor-pointer">
+                Free Consultation
+              </a>
             </button>
           </div>
         </div>

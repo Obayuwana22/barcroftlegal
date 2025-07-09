@@ -24,10 +24,10 @@ const PracticeAreaCard = () => {
             </div>
           </div>
           <div>
-            <div className="text-slate-600 leading-relaxed">
+            <div className="text-slate-600 leading-relaxed flex-1">
               {area.description}
             </div>
-            <button className="flex items-center mt-4 p-0 h-auto text-primary-clr hover:text-amber-700">
+            <button className="flex items-center mt-4 h-auto text-primary-clr hover:text-amber-700">
               Learn More <ChevronRight className="ml-1 h-4 w-4" />
             </button>
           </div>

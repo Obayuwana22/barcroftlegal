@@ -22,30 +22,25 @@ const Hero = () => {
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
                 Expert Legal Solutions. Industry Insight. Trusted Results. At{" "}
-                <span className="font-bold">Barcroftlegal</span>, we deliver comprehensive legal
-                services tailored to the complexities of Nigeria’s economic
-                landscape. Whether you're navigating regulatory frameworks,
-                closing high-stakes transactions, or resolving critical
-                disputes, our team of seasoned legal professionals is equipped
-                to guide you from start to finish. We operate at the
-                intersection of law, business, and policy—across energy,
-                maritime, and the public sector.
+                <span className="font-bold">Barcroftlegal</span>, we deliver
+                comprehensive legal services tailored to the complexities of
+                Nigeria’s economic landscape. Whether you're navigating
+                regulatory frameworks, closing high-stakes transactions, or
+                resolving critical disputes, our team of seasoned legal
+                professionals is equipped to guide you from start to finish. We
+                operate at the intersection of law, business, and policy—across
+                energy, maritime, and the public sector.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                size="lg"
-                className="flex items-center justify-center py-3 rounded bg-amber-500 hover:bg-amber-600 text-text-dark font-semibold md:px-10"
-              >
-                Schedule Consultation
-                <ChevronRight className="ml-2 h-5 w-5" />
-              </button>
-              <button
-                size="lg"
-                variant="outline"
-                className="border border-white py-3 text-white hover:bg-white hover:text-text-dark bg-transparent md:px-10"
-              >
+            <div className="flex flex-col sm:flex-row gap-4 ">
+              <a href="#contact" className="">
+                <button className="flex items-center justify-center py-3 rounded-md bg-amber-500 hover:bg-amber-600 transition duration-300 text-text-dark font-semibold cursor-pointer md:px-10">
+                  Schedule Consultation
+                  <ChevronRight className="ml-2 h-5 w-5" />
+                </button>
+              </a>
+              <button className="border border-white py-3 text-white rounded-md  hover:bg-white hover:text-text-dark transition duration-300 bg-transparent font-semibold cursor-pointer md:px-10">
                 Learn More
               </button>
             </div>

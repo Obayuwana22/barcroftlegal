@@ -8,9 +8,11 @@ import {
 } from "lucide-react";
 import { nanoid } from "nanoid";
 import placeholder from "./src/assets/png/cropped.jpg";
+import logo from "./src/assets/png/logo cropped.png";
 
 export const assets = {
   placeholder,
+  logo,
 };
 
 export const practiceAreaCard = [
