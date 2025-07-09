@@ -35,7 +35,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 ">
               <a href="#contact" className="">
-                <button className="flex items-center justify-center py-3 rounded-md bg-amber-500 hover:bg-amber-600 transition duration-300 text-text-dark font-semibold cursor-pointer md:px-10">
+                <button className="flex items-center justify-center py-3 rounded-md bg-amber-500 hover:bg-amber-600 w-full transition duration-300 text-text-dark font-semibold cursor-pointer md:px-10">
                   Schedule Consultation
                   <ChevronRight className="ml-2 h-5 w-5" />
                 </button>

@@ -2,7 +2,7 @@ import { HomeLayout } from "./components";
 
 function App() {
   return (
-    <div >
+    <div className="overflow-hidden" >
       <HomeLayout />
     </div>
   );
