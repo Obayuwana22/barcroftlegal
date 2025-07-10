@@ -83,7 +83,7 @@ const Footer = () => {
 
         <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-300">
           <p>
-            &copy; 2025 Sterling & Associates. All rights reserved. | Privacy
+            &copy; 2025 Barcroftlegal. All rights reserved. | Privacy
             Policy | Terms of Service
           </p>
         </div>
