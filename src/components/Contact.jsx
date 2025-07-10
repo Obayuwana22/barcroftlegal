@@ -4,12 +4,6 @@ import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import FormInput from "./FormInput";
 
 const Contact = () => {
-  //   const [firstName, setFirstName] = useState("");
-  //   const [lastName, setLastName] = useState("");
-  //   const [email, setEmail] = useState("");
-  //   const [phone, setPhone] = useState("");
-  //   const [legalMatter, setLegalMatter] = useState("");
-  //   const [message, setMessage] = useState("");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -46,8 +40,8 @@ const Contact = () => {
               </p>
 
               <p className="text-xl text-slate-300 leading-relaxed">
-                Contact us today to schedule a consultation or learn more
-                about how we can support your goals.
+                Contact us today to schedule a consultation or learn more about
+                how we can support your goals.
               </p>
             </div>
 
@@ -170,6 +164,7 @@ const Contact = () => {
                     name="message"
                     id="message"
                     rows={4}
+                    required
                     placeholder="Please provide details about your case..."
                     className="text-gray-300 px-4 py-2 text-sm border border-gray-300 rounded-md w-full placeholder:text-gray-500 focus:border-2 focus:border-black focus:outline-offset-5 focus:outline-gray-400 focus:rounded-md"
                     value={formData.message}
@@ -178,7 +173,7 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold rounded-md py-2"
+                  className="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold rounded-md py-2 cursor-pointer"
                 >
                   Send Message
                 </button>

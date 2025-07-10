@@ -10,6 +10,7 @@ const FormInput = ({ name, type, placeholder, label }) => {
         {label}
       </label>
       <input
+        required
         type={type}
         name={name}
         id={name}
