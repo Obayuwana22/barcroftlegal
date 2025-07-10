@@ -7,6 +7,7 @@ import Team from "./Team";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import WhyChooseUs from "./WhyChooseUs";
 
 const HomeLayout = () => {
   return (
@@ -16,8 +17,9 @@ const HomeLayout = () => {
         <Hero />
         <PracticeArea />
         <About />
+        <WhyChooseUs/>
         <Team />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
       </main>
       <Footer />

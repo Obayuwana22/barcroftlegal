@@ -71,7 +71,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2 text-slate-300">
               <p>(555) 123-4567</p>
-              <p>info@sterlinglaw.com</p>
+              <p>info@barcroftlegal.com</p>
               <p>
                 123 Legal Plaza, Suite 500
                 <br />
