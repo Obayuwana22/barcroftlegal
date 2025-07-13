@@ -9,6 +9,8 @@ const Hero = () => {
       className="relative py-24 bg-cover bg-center object-cover"
       style={{ backgroundImage: `url(${assets.background})` }}
     >
+
+       <div className="absolute inset-0 bg-black/50 z-0" />
     {/* // <section
     //   id="home"
     //   className="relative bg-gradient-to-br from-primary-clr via-dark-blue to-primary-blue text-white  py-24"
