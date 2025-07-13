@@ -6,19 +6,19 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative bg-gradient-to-br from-text-dark via-slate-800 to-text-dark text-white py-24"
+      className="relative bg-gradient-to-br from-primary-clr via-dark-blue to-primary-blue text-white  py-24"
     >
       <div className="absolute inset-0 bg-black/20"></div>
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 mt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="px-3 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 max-w-fit hover:bg-transparent">
+              <div className="px-3 rounded-full bg-white/20 text-white border-white/30  border max-w-fit hover:bg-transparent">
                 Trusted Legal Excellence Since 1985
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 Your Trusted Legal
-                <span className="text-amber-400"> Advocates</span>
+                <span className=""> Advocates</span>
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed">
                 Expert Legal Solutions. Industry Insight. Trusted Results. At{" "}
@@ -35,7 +35,7 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4 ">
               <a href="#contact" className="">
-                <button className="flex items-center justify-center py-3 rounded-md bg-amber-500 hover:bg-amber-600 w-full transition duration-300 text-text-dark font-semibold cursor-pointer md:px-10">
+                <button className="flex items-center justify-center py-3 rounded-md bg-bg-white  w-full transition duration-300 text-text-dark font-semibold cursor-pointer md:px-10">
                   Schedule Consultation
                   <ChevronRight className="ml-2 h-5 w-5" />
                 </button>
@@ -47,15 +47,15 @@ const Hero = () => {
 
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-slate-700">
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-400">500+</div>
+                <div className="text-3xl font-bold text-text-white">500+</div>
                 <div className="text-sm text-slate-300">Cases Won</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-400">35+</div>
+                <div className="text-3xl font-bold text-text-white">35+</div>
                 <div className="text-sm text-slate-300">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-400">98%</div>
+                <div className="text-3xl font-bold text-text-white">98%</div>
                 <div className="text-sm text-slate-300">Success Rate</div>
               </div>
             </div>
@@ -63,7 +63,7 @@ const Hero = () => {
 
           <div className="relative">
             <img
-              src={assets.placeholder}
+              src={assets.hero}
               alt="Professional legal team"
               width={500}
               height={600}
@@ -71,8 +71,8 @@ const Hero = () => {
             />
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-xl">
               <div className="flex items-center space-x-3">
-                <div className="bg-green-100 p-2 rounded-full">
-                  <Award className="h-6 w-6 text-green-600" />
+                <div className="bg-primary-clr p-2 rounded-full">
+                  <Award className="h-6 w-6 text-text-white" />
                 </div>
                 <div>
                   <div className="font-semibold text-text-dark">

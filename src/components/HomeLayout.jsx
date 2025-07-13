@@ -19,7 +19,7 @@ const HomeLayout = () => {
         <About />
         <WhyChooseUs/>
         <Team />
-        {/* <Testimonials /> */}
+        <Testimonials />
         <Contact />
       </main>
       <Footer />

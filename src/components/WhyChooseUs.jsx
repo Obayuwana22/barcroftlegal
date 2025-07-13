@@ -11,10 +11,10 @@ import Badge from "./Badge";
 
 const WhyChooseUs = () => {
   return (
-    <section className="py-20 bg-slate-900 text-white">
+    <section className="py-20 bg-primary-clr text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <div className="px-3 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 max-w-fit hover:bg-transparent mb-5 mx-auto">
+          <div className="px-3 rounded-full bg-blue-400 text-text-white border border-primary-text-light max-w-fit hover:bg-black mb-5 mx-auto">
             Why Choose Us?
           </div>
           <h2 className="text-4xl font-bold mb-6">
@@ -28,9 +28,9 @@ const WhyChooseUs = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="group">
-            <div className="bg-slate-800 p-8 rounded-xl hover:bg-slate-700 transition-all duration-300 h-full">
-              <div className="bg-amber-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-500/30 transition-colors">
-                <Award className="h-8 w-8 text-amber-400" />
+            <div className="bg-dark-blue p-8 rounded-xl hover:bg-dark-blue/80 transition-all duration-300 h-full">
+              <div className="bg-white/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors">
+                <Award className="h-8 w-8 text-text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-white">
                 Industry-Specific Legal Expertise
@@ -44,9 +44,9 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="group">
-            <div className="bg-slate-800 p-8 rounded-xl hover:bg-slate-700 transition-all duration-300 h-full">
-              <div className="bg-amber-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-500/30 transition-colors">
-                <Shield className="h-8 w-8 text-amber-400" />
+            <div className="bg-dark-blue p-8 rounded-xl hover:bg-dark-blue/80 transition-all duration-300 h-full">
+              <div className="bg-white/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors">
+                <Shield className="h-8 w-8 text-text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-white">
                 Proven Track Record
@@ -60,9 +60,9 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="group">
-            <div className="bg-slate-800 p-8 rounded-xl hover:bg-slate-700 transition-all duration-300 h-full">
-              <div className="bg-amber-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-500/30 transition-colors">
-                <Scale className="h-8 w-8 text-amber-400" />
+            <div className="bg-dark-blue p-8 rounded-xl hover:bg-dark-blue/80 transition-all duration-300 h-full">
+              <div className="bg-white/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors">
+                <Scale className="h-8 w-8 text-text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-white">
                 Deep Regulatory Understanding
@@ -76,9 +76,9 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="group">
-            <div className="bg-slate-800 p-8 rounded-xl hover:bg-slate-700 transition-all duration-300 h-full">
-              <div className="bg-amber-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-500/30 transition-colors">
-                <Users className="h-8 w-8 text-amber-400" />
+            <div className="bg-dark-blue p-8 rounded-xl hover:bg-dark-blue/80  transition-all duration-300 h-full">
+              <div className="bg-white/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors">
+                <Users className="h-8 w-8 text-text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-white">
                 Strategic, Client-Focused Approach
@@ -92,9 +92,9 @@ const WhyChooseUs = () => {
           </div>
 
           <div className="group md:col-span-2 lg:col-span-2">
-            <div className="bg-slate-800 p-8 rounded-xl hover:bg-slate-700 transition-all duration-300 h-full">
-              <div className="bg-amber-500/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-500/30 transition-colors">
-                <Building className="h-8 w-8 text-amber-400" />
+            <div className="bg-dark-blue p-8 rounded-xl hover:bg-dark-blue/80  transition-all duration-300 h-full">
+              <div className="bg-white/20 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-white/30 transition-colors">
+                <Building className="h-8 w-8 text-text-white" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-white">
                 Nationwide & International Reach
@@ -110,8 +110,8 @@ const WhyChooseUs = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-amber-500 to-amber-600 p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold text-slate-900 mb-4">
+          <div className="bg-blue-100 p-8 rounded-2xl">
+            <h3 className="text-2xl font-bold text-primary-clr mb-4">
               Ready to Experience the Barcroft Difference?
             </h3>
             <p className="text-slate-800 mb-6 max-w-2xl mx-auto">
@@ -119,7 +119,7 @@ const WhyChooseUs = () => {
               important legal matters.
             </p>
             <a href="#contact">
-              <button className="flex items-center justify-center mx-auto px-10 py-3 rounded bg-slate-900 hover:bg-slate-800 text-white font-semibold cursor-pointer">
+              <button className="flex items-center justify-center mx-auto px-10 py-3 rounded bg-primary-clr hover:bg-primary-dull text-white font-semibold cursor-pointer">
                 Schedule Your Consultation
                 <ChevronRight className="ml-2 h-5 w-5" />
               </button>

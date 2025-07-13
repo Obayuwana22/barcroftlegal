@@ -12,16 +12,15 @@ const TeamCard = () => {
         >
           <div className="pt-8">
             <img
-              src={assets.placeholder}
+              src={attorney.img}
               alt={attorney.name}
-              width={200}
-              height={200}
-              className="rounded-full mx-auto mb-6 shadow-lg"
+              
+              className="rounded-full w-40 h-40 object-cover  mx-auto mb-6 shadow-lg"
             />
             <h3 className="text-xl font-bold text-slate-900 mb-2">
               {attorney.name}
             </h3>
-            <p className="text-amber-600 font-semibold mb-2">
+            <p className="text-primary-clr font-semibold mb-2">
               {attorney.title}
             </p>
             <p className="text-slate-600 mb-4">{attorney.specialization}</p>

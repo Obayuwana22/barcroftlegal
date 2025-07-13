@@ -22,12 +22,12 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-slate-900 text-white">
+    <section id="contact" className="py-20 bg-primary-clr text-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="space-y-8">
             <div>
-              <div className="px-3 rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30 max-w-fit hover:bg-transparent mb-3">
+              <div className="px-3 rounded-full bg-blue-400 text-text-white border border-primary-text-light max-w-fit hover:bg-transparent mb-3">
                 Get In Touch
               </div>
               <h2 className="text-4xl font-bold mb-6">
@@ -47,8 +47,8 @@ const Contact = () => {
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="bg-amber-500/20 p-3 rounded-lg">
-                  <Phone className="h-6 w-6 text-amber-400" />
+                <div className="bg-white/20 p-3 rounded-lg">
+                  <Phone className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <div className="font-semibold">Phone</div>
@@ -57,8 +57,8 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="bg-amber-500/20 p-3 rounded-lg">
-                  <Mail className="h-6 w-6 text-amber-400" />
+                <div className="bg-white/20 p-3 rounded-lg">
+                  <Mail className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <div className="font-semibold">Email</div>
@@ -67,8 +67,8 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="bg-amber-500/20 p-3 rounded-lg">
-                  <MapPin className="h-6 w-6 text-amber-400" />
+                <div className="bg-white/20 p-3 rounded-lg">
+                  <MapPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <div className="font-semibold">Address</div>
@@ -81,8 +81,8 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="bg-amber-500/20 p-3 rounded-lg">
-                  <Clock className="h-6 w-6 text-amber-400" />
+                <div className="bg-white/20 p-3 rounded-lg">
+                  <Clock className="h-6 w-6 text-white" />
                 </div>
                 <div>
                   <div className="font-semibold">Hours</div>
@@ -97,7 +97,7 @@ const Contact = () => {
           </div>
 
           <form onSubmit={handleOnSubmit}>
-            <div className="bg-white p-5">
+            <div className="bg-white p-5 rounded-lg">
               <div className="mb-8">
                 <div className="text-slate-900 font-bold text-2xl mb-2">
                   Send Us a Message
@@ -173,7 +173,7 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold rounded-md py-2 cursor-pointer"
+                  className="w-full bg-primary-clr hover:bg-primary-dull text-white font-semibold rounded-md py-2 cursor-pointer"
                 >
                   Send Message
                 </button>

@@ -3,10 +3,15 @@
 @theme {
   --color-primary-bg: #101726;
   --color-bg-white: #ffffff;
-  --color-primary-clr: #f59e0b;
   --color-text-white: #ffffff;
   --color-text-dark: #121a28;
   --color-navbar-bg: #0f172a;
+
+  --color-primary-clr: #0047ad;
+  --color-primary-dull: #003a8c;
+  --color-primary-text-light: #e0f0ff;
+  --color-primary-text-blue: #0047ad;
+  --color-dark-blue: #002f6c;
 }
 
 body {

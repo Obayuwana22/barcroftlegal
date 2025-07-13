@@ -12,14 +12,14 @@ const PracticeAreaCard = () => {
         >
           <div className="pb-4">
             <div className="flex items-center justify-between mb-4">
-              <div className="bg-slate-100 group-hover:bg-amber-100 p-3 rounded-lg transition-colors">
-                <area.icon className="h-8 w-8 text-slate-700 group-hover:text-amber-600" />
+              <div className="bg-slate-100 group-hover:bg-primary-text-light p-3 rounded-lg transition-colors">
+                <area.icon className="h-8 w-8 text-primary-clr group-hover:primary-clr" />
               </div>
               {/* <div className="text-xs bg-gray-200 rounded-full px-2 py-1 font-semibold">
                 {area.cases}
               </div> */}
             </div>
-            <div className="text-xl group-hover:text-amber-600 transition-colors font-semibold">
+            <div className="text-xl group-hover:text-primary-clr transition-colors font-semibold">
               {area.title}
             </div>
           </div>

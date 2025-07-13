@@ -34,16 +34,16 @@ const About = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-slate-50 p-6 rounded-lg">
-                <div className="text-3xl font-bold text-amber-600 mb-2">
+              <div className="bg-gray-100 p-6 rounded-lg">
+                <div className="text-3xl font-bold text-primary-clr mb-2">
                   35+
                 </div>
                 <div className="text-slate-700 font-medium">
                   Years of Experience
                 </div>
               </div>
-              <div className="bg-slate-50 p-6 rounded-lg">
-                <div className="text-3xl font-bold text-amber-600 mb-2">12</div>
+              <div className="bg-gray-100 p-6 rounded-lg">
+                <div className="text-3xl font-bold text-primary-clr mb-2">12</div>
                 <div className="text-slate-700 font-medium">
                   Expert Attorneys
                 </div>
@@ -59,7 +59,7 @@ const About = () => {
               height={500}
               className="rounded-lg shadow-xl"
             />
-            <div className="absolute -top-6 -right-6 bg-amber-500 text-white p-6 rounded-lg shadow-xl">
+            <div className="absolute -top-6 -right-6 bg-primary-clr text-white p-6 rounded-lg shadow-xl">
               <div className="text-center">
                 <Award className="h-8 w-8 mx-auto mb-2" />
                 <div className="font-bold">AV Rated</div>

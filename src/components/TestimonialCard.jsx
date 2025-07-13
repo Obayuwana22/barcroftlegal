@@ -13,7 +13,7 @@ const TestimonialCard = () => {
           <div className="p-5">
             <div className="flex mb-4">
               {[...Array(testimonial.rating)].map((_, i) => (
-                <Star key={i} className="h-5 w-5 text-amber-400 fill-current" />
+                <Star key={i} className="h-5 w-5 text-primary-dull fill-current" />
               ))}
             </div>
             <p className="text-slate-600 mb-6 italic">
