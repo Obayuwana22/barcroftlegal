@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Badge from "./Badge";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import FormInput from "./FormInput";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,16 +15,53 @@ const Contact = () => {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false)
+
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: [e.target.value] });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleOnSubmit = (e) => {
+    setLoading(true)
     e.preventDefault();
+
+    const serviceID = "service_ga1uey3";
+    const templateID = "template_u4f8erq";
+    const publicKey = "WTXitCVbdjxfbWhT0";
+
+    const templateParams = {
+      first_name: formData.firstName,
+      last_name: formData.lastName,
+      email: formData.email,
+      phone: formData.phone,
+      legal_matter: formData.legalMatter,
+      message: formData.message,
+    };
+
+    emailjs
+      .send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        setLoading(false)
+        toast.success("Message sent successfully!");
+      
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          legalMatter: "",
+          message: "",
+        });
+      })
+      .catch((err) => {
+        setLoading(false)
+        toast.error("Something went wrong. Please try again later.");
+      });
   };
 
   return (
     <section id="contact" className="py-20 bg-primary-clr text-white">
+      <ToastContainer />
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="space-y-8">
@@ -112,7 +151,7 @@ const Contact = () => {
                   {/* First Name */}
                   <FormInput
                     label="First Name"
-                    name="first name"
+                    name="firstName"
                     type="text"
                     placeholder="John"
                     value={formData.firstName}
@@ -121,7 +160,7 @@ const Contact = () => {
                   {/* Last Name */}
                   <FormInput
                     label="Last Name"
-                    name="last name"
+                    name="lastName"
                     type="text"
                     placeholder="Doe"
                     value={formData.lastName}
@@ -149,7 +188,7 @@ const Contact = () => {
                 {/* Legal Matter */}
                 <FormInput
                   label="Legal Matter"
-                  name="legal matter"
+                  name="legalMatter"
                   type="text"
                   placeholder="Brief description of your legal needs"
                   value={formData.legalMatter}
@@ -166,7 +205,7 @@ const Contact = () => {
                     rows={4}
                     required
                     placeholder="Please provide details about your case..."
-                    className="text-gray-300 px-4 py-2 text-sm border border-gray-300 rounded-md w-full placeholder:text-gray-500 focus:border-2 focus:border-black focus:outline-offset-5 focus:outline-gray-400 focus:rounded-md"
+                    className="text-gray-600 px-4 py-2 text-sm border border-gray-300 rounded-md w-full placeholder:text-gray-400 focus:border-2 focus:border-black focus:outline-offset-5 focus:outline-gray-400 focus:rounded-md"
                     value={formData.message}
                     onChange={handleChange}
                   />
@@ -174,8 +213,9 @@ const Contact = () => {
                 <button
                   type="submit"
                   className="w-full bg-primary-clr hover:bg-primary-dull text-white font-semibold rounded-md py-2 cursor-pointer"
+                
                 >
-                  Send Message
+                  {loading ? "Sending message....." : "Send Message" }
                 </button>
               </div>
             </div>
