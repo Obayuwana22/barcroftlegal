@@ -6,8 +6,13 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative bg-gradient-to-br from-primary-clr via-dark-blue to-primary-blue text-white  py-24"
+      className="relative py-24 bg-cover bg-center object-cover"
+      style={{ backgroundImage: `url(${assets.background})` }}
     >
+    {/* // <section
+    //   id="home"
+    //   className="relative bg-gradient-to-br from-primary-clr via-dark-blue to-primary-blue text-white  py-24"
+    // > */}
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="container mx-auto px-4 relative z-10 mt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -16,11 +21,11 @@ const Hero = () => {
               <div className="px-3 rounded-full bg-white/20 text-white border-white/30  border max-w-fit hover:bg-transparent">
                 Trusted Legal Excellence Since 1985
               </div>
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-text-white">
                 Your Trusted Legal
                 <span className=""> Advocates</span>
               </h1>
-              <p className="text-xl text-slate-300 leading-relaxed">
+              <p className="text-base text-slate-300 leading-relaxed">
                 Expert Legal Solutions. Industry Insight. Trusted Results. At{" "}
                 <span className="font-bold">Barcroftlegal</span>, we deliver
                 comprehensive legal services tailored to the complexities of
