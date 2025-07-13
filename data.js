@@ -7,7 +7,7 @@ import {
   Users,
 } from "lucide-react";
 import { nanoid } from "nanoid";
-import placeholder from "./src/assets/png/cropped.jpg";
+import placeholder from "./src/assets/png/placeholder.png";
 import logo from "./src/assets/png/logo cropped.png";
 
 export const assets = {

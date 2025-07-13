@@ -4,7 +4,7 @@ import { Phone } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <header className="text-white sticky top-0 z-50 bg-navbar-bg">
+    <header className="text-white fixed w-full top-0 z-50 bg-navbar-bg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Logo />

@@ -27,7 +27,7 @@ const PracticeAreaCard = () => {
             <div className="text-slate-600 leading-relaxed flex-1">
               {area.description}
             </div>
-            <button className="flex items-center mt-4 h-auto text-primary-clr hover:text-amber-700">
+            <button className="flex items-center mt-4 h-auto text-primary-clr hover:text-amber-700 cursor-pointer">
               Learn More <ChevronRight className="ml-1 h-4 w-4" />
             </button>
           </div>
