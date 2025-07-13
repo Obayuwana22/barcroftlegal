@@ -1,5 +1,5 @@
 import React from "react";
-import { assets, teamCard } from "../../data";
+import { teamCard } from "../../data";
 import { Award, Clock } from "lucide-react";
 
 const TeamCard = () => {

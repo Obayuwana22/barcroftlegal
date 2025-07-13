@@ -13,6 +13,7 @@ import logo from "./src/assets/png/logo cropped.png";
 import lawyerOne from "./src/assets/lawyer 1.webp";
 import lawyerTwo from "./src/assets/lawyer 2.webp";
 import lawyerThree from "./src/assets/lawyer 3.webp";
+import background from "./src/assets/background.avif";
 
 export const assets = {
   placeholder,
@@ -20,8 +21,8 @@ export const assets = {
   hero,
   lawyerOne,
   lawyerTwo,
-  lawyerThree
-
+  lawyerThree,
+  background,
 };
 
 export const practiceAreaCard = [
@@ -92,7 +93,7 @@ export const teamCard = [
     specialization: "Corporate Law & Litigation",
     experience: "20+ Years",
     education: "Harvard Law School",
-    img:lawyerOne
+    img: lawyerOne,
   },
   {
     id: nanoid(),
@@ -101,7 +102,7 @@ export const teamCard = [
     specialization: "Family Law & Mediation",
     experience: "15+ Years",
     education: "Stanford Law School",
-    img:lawyerTwo
+    img: lawyerTwo,
   },
   {
     id: nanoid(),
@@ -110,7 +111,7 @@ export const teamCard = [
     specialization: "Criminal Defense",
     experience: "12+ Years",
     education: "Yale Law School",
-    img:lawyerThree
+    img: lawyerThree,
   },
 ];
 
