@@ -68,7 +68,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative">
+          {/* <div className="relative">
             <img
               src={assets.hero}
               alt="Professional legal team"
@@ -91,7 +91,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

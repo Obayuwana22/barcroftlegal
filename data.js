@@ -13,7 +13,7 @@ import logo from "./src/assets/png/logo cropped.png";
 import lawyerOne from "./src/assets/lawyer 1.webp";
 import lawyerTwo from "./src/assets/lawyer 2.webp";
 import lawyerThree from "./src/assets/lawyer 3.webp";
-import background from "./src/assets/background.avif";
+import background from "./src/assets/background.jpg";
 
 export const assets = {
   placeholder,
