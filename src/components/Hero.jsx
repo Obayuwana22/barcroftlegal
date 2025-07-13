@@ -25,7 +25,7 @@ const Hero = () => {
                 Your Trusted Legal
                 <span className=""> Advocates</span>
               </h1>
-              <p className="text-base text-slate-300 leading-relaxed">
+              <p className="text-base text-white leading-relaxed">
                 Expert Legal Solutions. Industry Insight. Trusted Results. At{" "}
                 <span className="font-bold">Barcroftlegal</span>, we deliver
                 comprehensive legal services tailored to the complexities of
@@ -50,7 +50,7 @@ const Hero = () => {
               </button>
             </div>
 
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-slate-700">
+            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white">
               <div className="text-center">
                 <div className="text-3xl font-bold text-text-white">500+</div>
                 <div className="text-sm text-slate-300">Cases Won</div>
