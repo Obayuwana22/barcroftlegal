@@ -1,18 +1,15 @@
 import { Award, ChevronRight } from "lucide-react";
 import React from "react";
-import { assets } from "../../data";
+import { sliderAssets } from "../../data";
+import { HeroSlider } from "./HeroSlider";
 
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="relative py-24 bg-cover bg-center object-cover"
-      style={{ backgroundImage: `url(${assets.background})` }}
-    >
-      <div className="absolute inset-0 bg-black/50 z-0" />
-      <div className="absolute inset-0 bg-black/20"></div>
-      <div className="container mx-auto px-4 relative z-10 mt-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section id="home" className="relative mt-24">
+      <HeroSlider images={sliderAssets} />
+      <div className="container mx-auto px-4">
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center text-white z-20">
+          {/* <div className="grid lg:grid-cols-2 gap-12 items-center"> */}
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="px-3 rounded-full bg-white/20 text-white border-white/30  border max-w-fit hover:bg-transparent">
@@ -39,7 +36,7 @@ const Hero = () => {
               </p> */}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 ">
+            <div className="flex flex-col justify-center sm:flex-row gap-4 ">
               <a href="#contact" className="">
                 <button className="flex items-center justify-center py-3 rounded-md bg-bg-white  w-full transition duration-300 text-text-dark font-semibold cursor-pointer md:px-10">
                   Schedule Consultation

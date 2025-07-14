@@ -14,6 +14,10 @@ import lawyerOne from "./src/assets/lawyer 1.webp";
 import lawyerTwo from "./src/assets/lawyer 2.webp";
 import lawyerThree from "./src/assets/lawyer 3.webp";
 import background from "./src/assets/background.jpg";
+import sliderOne from "./src/assets/justice-1.jpg";
+import sliderTwo from "./src/assets/justice-1.jpg";
+import sliderThree from "./src/assets/justice-3.png";
+import sliderFour from "./src/assets/justice-4.jpg";
 
 export const assets = {
   placeholder,
@@ -24,6 +28,13 @@ export const assets = {
   lawyerThree,
   background,
 };
+
+export const sliderAssets = [
+  { src: sliderOne, alt: "image one" },
+  { src: sliderTwo, alt: "image two" },
+  { src: sliderThree, alt: "image three" },
+  { src: sliderFour, alt: "image four" },
+];
 
 export const practiceAreaCard = [
   {
