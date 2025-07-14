@@ -36,22 +36,22 @@ const About = () => {
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <div className="text-3xl font-bold text-primary-clr mb-2">
-                  35+
+                  20+
                 </div>
                 <div className="text-slate-700 font-medium">
                   Years of Experience
                 </div>
               </div>
-              <div className="bg-gray-100 p-6 rounded-lg">
+              {/* <div className="bg-gray-100 p-6 rounded-lg">
                 <div className="text-3xl font-bold text-primary-clr mb-2">12</div>
                 <div className="text-slate-700 font-medium">
                   Expert Attorneys
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
-          <div className="relative">
+          {/* <div className="relative">
             <img
               src={assets.placeholder}
               alt="Law firm office"
@@ -66,7 +66,7 @@ const About = () => {
                 <div className="text-sm opacity-90">Martindale-Hubbell</div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

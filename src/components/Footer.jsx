@@ -11,7 +11,7 @@ const Footer = () => {
             <Logo />
             <p className="text-slate-300">
               Providing exceptional legal representation with integrity and
-              dedication since 1985.
+              dedication
             </p>
           </div>
 
@@ -41,7 +41,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-slate-300">
               <li>
@@ -65,17 +65,17 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
             <h4 className="font-semibold mb-4">Contact Info</h4>
             <div className="space-y-2 text-slate-300">
-              <p>(555) 123-4567</p>
+              <p>+234 810 978 8217</p>
               <p>info@barcroftlegal.com</p>
               <p>
-                123 Legal Plaza, Suite 500
+                3b Pacific Drive, Ocean Bay Estate,
                 <br />
-                Downtown, ST 12345
+                Lekki Lagos
               </p>
             </div>
           </div>
@@ -83,8 +83,8 @@ const Footer = () => {
 
         <div className="border-t border-slate-700 mt-8 pt-8 text-center text-slate-300">
           <p>
-            &copy; 2025 Barcroftlegal. All rights reserved. | Privacy
-            Policy | Terms of Service
+            &copy; 2025 Barcroftlegal. All rights reserved. | Privacy Policy |
+            Terms of Service
           </p>
         </div>
       </div>

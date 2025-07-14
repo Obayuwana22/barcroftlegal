@@ -9,25 +9,24 @@ const Hero = () => {
       className="relative py-24 bg-cover bg-center object-cover"
       style={{ backgroundImage: `url(${assets.background})` }}
     >
-
-       <div className="absolute inset-0 bg-black/50 z-0" />
-    {/* // <section
-    //   id="home"
-    //   className="relative bg-gradient-to-br from-primary-clr via-dark-blue to-primary-blue text-white  py-24"
-    // > */}
+      <div className="absolute inset-0 bg-black/50 z-0" />
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="container mx-auto px-4 relative z-10 mt-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="px-3 rounded-full bg-white/20 text-white border-white/30  border max-w-fit hover:bg-transparent">
-                Trusted Legal Excellence Since 1985
+                20+ years of Excellence
               </div>
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-text-white">
                 Your Trusted Legal
                 <span className=""> Advocates</span>
               </h1>
-              <p className="text-base text-white leading-relaxed">
+
+              <p className="text-xl text-white leading-relaxed">
+                Expert Legal Solutions. Industry Insight. Trusted Results.
+              </p>
+              {/* <p className="text-base text-white leading-relaxed">
                 Expert Legal Solutions. Industry Insight. Trusted Results. At{" "}
                 <span className="font-bold">Barcroftlegal</span>, we deliver
                 comprehensive legal services tailored to the complexities of
@@ -37,7 +36,7 @@ const Hero = () => {
                 professionals is equipped to guide you from start to finish. We
                 operate at the intersection of law, business, and policy—across
                 energy, maritime, and the public sector.
-              </p>
+              </p> */}
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 ">
@@ -47,12 +46,14 @@ const Hero = () => {
                   <ChevronRight className="ml-2 h-5 w-5" />
                 </button>
               </a>
-              <button className="border border-white py-3 text-white rounded-md  hover:bg-white hover:text-text-dark transition duration-300 bg-transparent font-semibold cursor-pointer md:px-10">
-                Learn More
-              </button>
+              <a href="#about">
+                <button className="border border-white py-3 text-white rounded-md  hover:bg-white hover:text-text-dark transition duration-300 bg-transparent font-semibold cursor-pointer md:px-10">
+                  Learn More
+                </button>
+              </a>
             </div>
 
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white">
+            {/* <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white">
               <div className="text-center">
                 <div className="text-3xl font-bold text-text-white">500+</div>
                 <div className="text-sm text-white">Cases Won</div>
@@ -65,7 +66,7 @@ const Hero = () => {
                 <div className="text-3xl font-bold text-text-white">98%</div>
                 <div className="text-sm text-white">Success Rate</div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* <div className="relative">

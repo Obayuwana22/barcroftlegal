@@ -15,14 +15,14 @@ const Contact = () => {
     message: "",
   });
 
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleOnSubmit = (e) => {
-    setLoading(true)
+    setLoading(true);
     e.preventDefault();
 
     const serviceID = "service_ga1uey3";
@@ -41,9 +41,9 @@ const Contact = () => {
     emailjs
       .send(serviceID, templateID, templateParams, publicKey)
       .then((response) => {
-        setLoading(false)
+        setLoading(false);
         toast.success("Message sent successfully!");
-      
+
         setFormData({
           firstName: "",
           lastName: "",
@@ -54,7 +54,7 @@ const Contact = () => {
         });
       })
       .catch((err) => {
-        setLoading(false)
+        setLoading(false);
         toast.error("Something went wrong. Please try again later.");
       });
   };
@@ -91,7 +91,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Phone</div>
-                  <div className="text-slate-300">(555) 123-4567</div>
+                  <div className="text-slate-300">+234 810 978 8217</div>
                 </div>
               </div>
 
@@ -101,7 +101,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="font-semibold">Email</div>
-                  <div className="text-slate-300">info@sterlinglaw.com</div>
+                  <div className="text-slate-300">info@barcroftlegal.com</div>
                 </div>
               </div>
 
@@ -112,14 +112,14 @@ const Contact = () => {
                 <div>
                   <div className="font-semibold">Address</div>
                   <div className="text-slate-300">
-                    123 Legal Plaza, Suite 500
+                    3b Pacific Drive, Ocean Bay Estate,
                     <br />
-                    Downtown, ST 12345
+                    Lekki Lagos
                   </div>
                 </div>
               </div>
 
-              <div className="flex items-center space-x-4">
+              {/* <div className="flex items-center space-x-4">
                 <div className="bg-white/20 p-3 rounded-lg">
                   <Clock className="h-6 w-6 text-white" />
                 </div>
@@ -131,7 +131,7 @@ const Contact = () => {
                     Sat: 9:00 AM - 2:00 PM
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -213,9 +213,8 @@ const Contact = () => {
                 <button
                   type="submit"
                   className="w-full bg-primary-clr hover:bg-primary-dull text-white font-semibold rounded-md py-2 cursor-pointer"
-                
                 >
-                  {loading ? "Sending message....." : "Send Message" }
+                  {loading ? "Sending message....." : "Send Message"}
                 </button>
               </div>
             </div>
