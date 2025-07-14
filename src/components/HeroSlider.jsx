@@ -23,7 +23,7 @@ export function HeroSlider({ images, interval = 5000, className, ...props }) {
 
   return (
     <div
-      className={`relative h-screen w-full overflow-hidden, ${className}`}
+      className={`relative h-screen w-full overflow-hidden ${className}`}
       {...props}
     >
       {images.map((image, index) => (

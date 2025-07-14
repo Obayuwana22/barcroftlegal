@@ -5,7 +5,7 @@ import { HeroSlider } from "./HeroSlider";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative mt-24">
+    <section id="home" className="relative pt-24">
       <HeroSlider images={sliderAssets} />
       <div className="container mx-auto px-4">
         <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center text-white z-20">
