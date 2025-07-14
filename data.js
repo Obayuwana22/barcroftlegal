@@ -15,7 +15,7 @@ import lawyerTwo from "./src/assets/lawyer 2.webp";
 import lawyerThree from "./src/assets/lawyer 3.webp";
 import background from "./src/assets/background.jpg";
 import sliderOne from "./src/assets/justice-1.jpg";
-import sliderTwo from "./src/assets/justice-1.jpg";
+import sliderTwo from "./src/assets/justice-2.jpg";
 import sliderThree from "./src/assets/justice-3.png";
 import sliderFour from "./src/assets/justice-4.jpg";
 
