@@ -49,7 +49,8 @@ const Navbar = () => {
             </div>
             <button className="bg-bg-white text-primary-clr   font-semibold rounded-lg px-5 py-2">
               <a href="#contact" className="cursor-pointer">
-                Free Consultation
+                {/* Free Consultation */}
+              Legal Support
               </a>
             </button>
           </div>
